@@ -29,6 +29,21 @@ document.addEventListener('keydown', (event) => {
   newImg.setAttribute("style", "width:50%");
   pageBody.append(newImg);
 
-  
+  // Add second h1 element
+  h1Element2 = document.createElement("h1");
+  h1Element2.append("Facts about the Multicolored Tanager");
+  pageBody.append(h1Element2);
+
+  // Add ul element
+  const newList = document.createElement("ul");
+  // Add list items
+  const item1 = document.createElement("li");
+  item1.append("It is endemic to the mountains of Colombia.");
+  const item2 = document.createElement("li");
+  item2.append("It usually searches for insects on the underside of leaves of outer limbs while clinging to leaves with its feet.");
+  // Add items to new list
+  newList.append(item1, item2);
+  // Add list to body
+  pageBody.append(newList);
   
 });
