@@ -21,5 +21,14 @@ document.addEventListener('keydown', (event) => {
   const newParagraph = document.createElement("p");
   newParagraph.append("The HTML of this webpage was created with JavaScript.");
   pageBody.append(newParagraph);
+
+  // Add img element
+  const newImg = document.createElement("img");
+  newImg.setAttribute("src", "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/202984001/900");
+  newImg.setAttribute("alt", "This is an image of a Multicolored Tanager bird from birdsoftheworld.org");
+  newImg.setAttribute("style", "width:50%");
+  pageBody.append(newImg);
+
+  
   
 });
